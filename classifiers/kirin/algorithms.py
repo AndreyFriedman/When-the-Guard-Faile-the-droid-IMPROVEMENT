@@ -30,7 +30,10 @@ def kirin_(X):
         import pandas as pd
         groups=[['perm: SET_DEBUG_APP'],
         ['perm: READ_PHONE_STATE','perm: RECORD_AUDIO','perm: INTERNET'],
-       
+        # use one of the following to make the classification better, READ_EXTERNAL_STORAGE doesnt improve the classification
+        # ['perm: READ_PHONE_STATE','perm: WAKE_LOCK','perm: INTERNET'],
+        # ['perm: READ_PHONE_STATE','perm: ACCESS_NETWORK_STATE','perm: INTERNET'],
+        # ['perm: READ_PHONE_STATE','perm: READ_EXTERNAL_STORAGE','perm: INTERNET'],
         ['perm: PROCESS_OUTGOING_CALLS','perm: RECORD_AUDIO','perm: INTERNET'],
         ['perm: ACCESS_FINE_LOCATION','perm: INTERNET','perm: RECEIVE_BOOT_COMPLETED'],
         ['perm: ACCESS_COARSE_LOCATION','perm: INTERNET','perm: RECEIVE_BOOT_COMPLETED'],
